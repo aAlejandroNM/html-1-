@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Usuario</title>
+</head>
+<body>
+    <h1>Formulario de Registro de Usuario</h1>
+    <form action="/send" method="get" autocomplete="off" name="mi_formulario" target="_blank" >
+        <p>
+            <label for="nombre_completo">Nombre completo</label>
+            <input type="text" name="nombre_completo" required>
+        </p>
+        <p>
+            <label for="email">Correo Electronico</label>
+            <input type="email" name="email" required>
+        </p>
+        <p>
+            <label for="pssw">Contraseña</label>
+            <input type="password" name="pssw" required minlength="8">
+        </p>
+        <p>
+            <label for="pssw">Confirmar Contraseña</label>
+            <input type="password" name="pssw" required minlength="8">
+        </p>
+        <p>
+            <label for="f_nacimiento">Fecha Nacimiento</label>
+            <input type="date" name="f_nacimiento" required>
+        </p>
+        <fieldset>
+            <legend for="genero">Cual es su genero ?</legend><br>
+            <input type="radio" name="genero" id="male" value="male">
+            <label for="male">Maculino</label>
+            <input type="radio" name="genero" id="female" value="female">
+            <label for="female">Femenino</label>
+            <input type="radio" name="genero" id="otro" value="otro">
+            <label for="otro">Otro</label>
+        </fieldset>
+        <fieldset>
+            <legend for="intereses">INTERESES</legend><br>
+            <input type="checkbox" name="intereses" id="Tecnologia" value="Tecnologia">
+            <label for="Tecnologia">Tecnologia</label>
+            <input type="checkbox" name="intereses" id="Deportes" value="Deportes">
+            <label for="Deportes">Deportes</label>
+            <input type="checkbox" name="intereses" id="musica" value="musica">
+            <label for="musica">Musica</label>
+        </fieldset>
+        <label for="paises_seleccion">Seleccione su pais</label>
+
+        <select name="pais" id="paises_seleccion" required> 
+        <option value="">Escoja un pais</option>
+        <option value="Colombia">Colombia</option>
+        <option value="mexico">mexico</option>
+        <option value="peru">Perù</option>
+        <option value="brazil">Brazil</option>
+        <option value="otro">Otro</option>
+        </select>
+        <p>
+            <label for="biografia">Biografia</label>
+            <textarea name="biografia" id="biografia" cols="20" rows="5" ></textarea>
+        </p>
+        <input type="submit" name="envia" id="">
+
+    </form>
+</body>
+</html>
